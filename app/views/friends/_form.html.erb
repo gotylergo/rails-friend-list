@@ -11,34 +11,33 @@
     </div>
   <% end %>
 
-  <div class="field form-group">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name, class:'form-control' %>
+  <div class="field form-floating mb-3">
+    <%= form.text_field :first_name, class:'form-control', placeholder: :first_name %>
+    <%= form.label :first_name, class:'form-label' %>
   </div>
 
-  <div class="field form-group">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, class:'form-control' %>
+  <div class="field form-floating mb-3">
+    <%= form.text_field :last_name, class:'form-control', placeholder: :last_name %>
+    <%= form.label :last_name, class:'form-label' %>
   </div>
 
-  <div class="field form-group">
-    <%= form.label :email %>
-    <%= form.text_field :email, class:'form-control' %>
+  <div class="field form-floating mb-3">
+    <%= form.text_field :email, class:'form-control', placeholder: :email %>
+    <%= form.label :email, class:'form-label' %>
   </div>
 
-  <div class="field form-group">
-    <%= form.label :phone %>
-    <%= form.text_field :phone, class:'form-control' %>
+  <div class="field form-floating mb-3">
+    <%= form.text_field :phone, class:'form-control', placeholder: :phone %>
+    <%= form.label :phone, class:'form-label' %>
   </div>
 
-  <div class="field form-group">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter, class:'form-control' %>
+  <div class="field form-floating input-group mb-3">
+    <span class="input-group-text">@</span>
+    <%= form.text_field :twitter, class:'form-control', placeholder: :twitter %>
+    <%= form.label :twitter, class:'form-label', style:'padding-left:3.5em;' %>
   </div>
 
-  <br />
-
-  <div class="actions">
+  <div class="actions mt-3">
     <%= form.submit class:'btn btn-primary' %>
   </div>
 <% end %>
