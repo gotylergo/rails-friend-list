@@ -1,6 +1,6 @@
 <%= form_with(model: friend) do |form| %>
   <% if friend.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger">
       <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
 
       <ul>
